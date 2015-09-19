@@ -30,5 +30,8 @@ module Main
       `$(document).off('click.editing', self.stop_func)`
     end
 
+    def destroy
+      model.destroy
+    end
   end
 end
